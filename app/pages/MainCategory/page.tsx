@@ -1,4 +1,4 @@
- // 'use client'
+ 'use client'
 
 import {useQuery} from "react-query";
 import {TMainCategory, TMainCategorys} from "@/types/types";
@@ -26,9 +26,7 @@ const MainCategoryPage = () => {
 
     return (
         <>
-            <div>
-                <Link key={mainCategorys?.code} href="/ParallelQureisMainCategory">패러렐 페이지</Link>
-            </div>
+
             <div className="m-5">
 
                 <div>
