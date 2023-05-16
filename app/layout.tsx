@@ -18,8 +18,9 @@ export default function RootLayout({
         <html lang="en">
         <QueryClientProvider client={queryClient}>
           <body>{children}</body>
-            <ReactQueryDevtools initialIsOpen={false} position="bottom-left"/>
+          <ReactQueryDevtools initialIsOpen={false} position="bottom-left"/>
         </QueryClientProvider>
+
         </html>
       </>
   )

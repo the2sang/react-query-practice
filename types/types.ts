@@ -3,6 +3,13 @@ export type TMainCategory = {
   name: string
 }
 
+export type TMainCategoryResponse = {
+  success: boolean
+  code: number
+  msg: string
+  data: TMainCategory
+}
+
 export type TMainCategorys =  {
   success: string
   code: string
@@ -14,6 +21,11 @@ export type TMiddleCategory = {
   id?: number
   name: string
   mainCategory: TMainCategory
+}
+
+export type TMiddleCategoryDto = {
+  id?: number
+  name: string
 }
 
 
