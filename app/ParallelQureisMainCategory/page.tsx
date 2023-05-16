@@ -19,15 +19,15 @@ interface Post {
 const getMemoryCardsById = async (query: QueryFunctionContext) => {
     console.log(query)
     const { data }
-        = await axios.get(`http://localhost:8080/api/memoryCard/middlecode?param=${query.queryKey[1]}`)
+        = await axios.get(`http://localhost:8080/api/middleCategory/mainCategoryCode?id=${query.queryKey[1]}`)
     return data.list;
 }
 
 
 const Page: NextPage = () => {
 
-    useQuery<TMemoryCard, Error>(["momorycard", 1], getMemoryCardsById);
-    useQuery<TMemoryCard, Error>(["momorycard", 2], getMemoryCardsById);
+    useQuery<TMemoryCard, Error>(["middleCategory", 1], getMemoryCardsById);
+    useQuery<TMemoryCard, Error>(["middleCategory", 2], getMemoryCardsById);
 
     return <div>Parallel Queries Page</div>;
 };

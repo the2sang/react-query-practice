@@ -9,8 +9,6 @@ import MainCategoryPage from "@/app/MainCategory/page";
 const Home = () => {
     return (
         <>
-            {/*<Component {...pageProps} />*/}
-            {/*<Link href="/ParallelQureisMainCategory">Paralel Link</Link>*/}
             <MainCategoryPage/>
         </>
     )
